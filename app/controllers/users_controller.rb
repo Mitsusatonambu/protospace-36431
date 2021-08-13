@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   def show
     #@user = User.new(user_params)
     @user = User.find(params[:id])
-    @prototypes = Prototype.all
   end
 
   #private
